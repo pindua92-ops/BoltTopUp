@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoltTopup Pro</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#09090b;
+font-family:'Segoe UI',sans-serif;
+}
+
+.hero{
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
+url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1920&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+}
+
+.game-card{
+transition:.3s;
+}
+
+.game-card:hover{
+transform:translateY(-8px);
+}
+
+.glow{
+box-shadow:0 0 20px rgba(250,204,21,.25);
+}
+</style>
+
+</head>
+<body class="text-white">
+
+<!-- NAVBAR -->
+<nav class="bg-black/90 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-bolt text-yellow-400 text-3xl"></i>
+<h1 class="text-3xl font-bold">
+Bolt<span class="text-yellow-400">Topup</span>
+</h1>
+</div>
+
+<div class="hidden md:flex gap-8">
+<a href="#" class="hover:text-yellow-400">Home</a>
+<a href="#games" class="hover:text-yellow-400">Games</a>
+<a href="#topup" class="hover:text-yellow-400">Topup</a>
+<a href="#faq" class="hover:text-yellow-400">FAQ</a>
+</div>
+
+<button class="bg-yellow-400 text-black px-5 py-2 rounded-full font-bold hover:bg-yellow-300">
+Login
+</button>
+
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero min-h-screen flex items-center">
+
+<div class="max-w-6xl mx-auto text-center px-5">
+
+<h1 class="text-5xl md:text-7xl font-black mb-6">
+Top Up Game
+<br>
+<span class="text-yellow-400">
+Paling Murah & Laju
+</span>
+</h1>
+
+<p class="text-xl text-zinc-300 mb-10">
+MLBB • Free Fire • Valorant • Honor of Kings • PUBG Mobile
+</p>
+
+<a href="#topup"
+class="bg-yellow-400 text-black px-10 py-4 rounded-2xl text-xl font-bold hover:scale-105 transition">
+TOP UP SEKARANG
+</a>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+<section class="bg-black py-10">
+
+<div class="max-w-6xl mx-auto grid grid-cols-3 text-center">
+
+<div>
+<h3 class="text-4xl font-bold text-yellow-400">100K+</h3>
+<p class="text-zinc-400">Order</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-yellow-400">50K+</h3>
+<p class="text-zinc-400">User</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-yellow-400">24/7</h3>
+<p class="text-zinc-400">Support</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GAMES -->
+<section id="games" class="bg-zinc-900 py-20">
+
+<div class="max-w-7xl mx-auto px-5">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+Game Popular
+</h2>
+
+<input
+type="text"
+placeholder="Cari game..."
+class="w-full max-w-xl mx-auto block p-4 rounded-xl bg-zinc-800 border border-zinc-700 mb-10">
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+<div class="game-card bg-zinc-800 rounded-2xl overflow-hidden">
+<img src="https://picsum.photos/400/250?1" class="w-full h-40 object-cover">
+<div class="p-4">
+<h3 class="font-bold">Mobile Legends</h3>
+<p class="text-green-400">Bermula RM5</p>
+</div>
+</div>
+
+<div class="game-card bg-zinc-800 rounded-2xl overflow-hidden">
+<img src="https://picsum.photos/400/250?2" class="w-full h-40 object-cover">
+<div class="p-4">
+<h3 class="font-bold">Free Fire</h3>
+<p class="text-green-400">Bermula RM4</p>
+</div>
+</div>
+
+<div class="game-card bg-zinc-800 rounded-2xl overflow-hidden">
+<img src="https://picsum.photos/400/250?3" class="w-full h-40 object-cover">
+<div class="p-4">
+<h3 class="font-bold">Valorant</h3>
+<p class="text-green-400">Bermula RM10</p>
+</div>
+</div>
+
+<div class="game-card bg-zinc-800 rounded-2xl overflow-hidden">
+<img src="https://picsum.photos/400/250?4" class="w-full h-40 object-cover">
+<div class="p-4">
+<h3 class="font-bold">Honor of Kings</h3>
+<p class="text-green-400">Bermula RM6</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TOPUP FORM -->
+<section id="topup" class="py-20 bg-black">
+
+<div class="max-w-3xl mx-auto px-5">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+Topup Sekarang
+</h2>
+
+<div class="bg-zinc-900 rounded-3xl p-8 glow">
+
+<input
+type="text"
+placeholder="Player ID"
+class="w-full p-4 rounded-xl bg-zinc-800 mb-4">
+
+<input
+type="text"
+placeholder="Server ID"
+class="w-full p-4 rounded-xl bg-zinc-800 mb-4">
+
+<select class="w-full p-4 rounded-xl bg-zinc-800 mb-4">
+<option>86 Diamonds - RM5</option>
+<option>172 Diamonds - RM10</option>
+<option>257 Diamonds - RM15</option>
+<option>514 Diamonds - RM30</option>
+</select>
+
+<select class="w-full p-4 rounded-xl bg-zinc-800 mb-6">
+<option>DuitNow QR</option>
+<option>Touch n Go eWallet</option>
+<option>FPX Online Banking</option>
+<option>GrabPay</option>
+</select>
+
+<button
+class="w-full bg-yellow-400 text-black py-4 rounded-xl font-bold text-lg hover:bg-yellow-300">
+Bayar Sekarang
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="bg-zinc-900 py-20">
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center px-5">
+
+<div>
+<i class="fa-solid fa-bolt text-yellow-400 text-5xl mb-4"></i>
+<h3 class="text-2xl font-bold">Pantas</h3>
+<p class="text-zinc-400">1-5 minit</p>
+</div>
+
+<div>
+<i class="fa-solid fa-shield-halved text-yellow-400 text-5xl mb-4"></i>
+<h3 class="text-2xl font-bold">Selamat</h3>
+<p class="text-zinc-400">100% dipercayai</p>
+</div>
+
+<div>
+<i class="fa-solid fa-tag text-yellow-400 text-5xl mb-4"></i>
+<h3 class="text-2xl font-bold">Murah</h3>
+<p class="text-zinc-400">Harga kompetitif</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONI -->
+<section class="py-20 bg-black">
+
+<div class="max-w-6xl mx-auto px-5">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+Testimoni
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-zinc-800 p-6 rounded-2xl">
+⭐⭐⭐⭐⭐
+<p class="mt-3">
+Topup masuk kurang seminit.
+</p>
+</div>
+
+<div class="bg-zinc-800 p-6 rounded-2xl">
+⭐⭐⭐⭐⭐
+<p class="mt-3">
+Harga paling murah yang aku jumpa.
+</p>
+</div>
+
+<div class="bg-zinc-800 p-6 rounded-2xl">
+⭐⭐⭐⭐⭐
+<p class="mt-3">
+Support sangat membantu.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-zinc-900 py-20">
+
+<div class="max-w-4xl mx-auto px-5">
+
+<h2 class="text-4xl font-bold text-center mb-10">
+FAQ
+</h2>
+
+<div class="space-y-4">
+
+<div class="bg-zinc-800 p-5 rounded-xl">
+Berapa lama topup masuk?
+<b> 1-5 minit.</b>
+</div>
+
+<div class="bg-zinc-800 p-5 rounded-xl">
+Apa pembayaran yang disokong?
+<b> DuitNow, TNG, FPX, GrabPay.</b>
+</div>
+
+<div class="bg-zinc-800 p-5 rounded-xl">
+Perlu password akaun?
+<b> Tidak.</b>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-zinc-800 py-12 text-center">
+
+<h3 class="text-2xl font-bold">
+BoltTopup
+</h3>
+
+<p class="text-zinc-400 mt-3">
+Topup Game Terpantas Malaysia
+</p>
+
+<p class="text-zinc-500 mt-4">
+© 2026 BoltTopup. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
